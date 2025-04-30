@@ -1,0 +1,4 @@
+Left_Side	Point_Tip	Left_Tang_Center
+Left_Wing	Left_Tang_Center	Base_Center
+Right_Wing	Base_Center	Right_Tang_Center
+Right_Side	Right_Tang_Center	Point_Tip

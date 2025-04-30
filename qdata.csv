@@ -1,0 +1,433 @@
+﻿specimen,name,area,county ,ecoregion,region,corep,material
+41BX1029_001,41BX1029,29x98,Bexar,Texas Blackland Prairies,central,Core,root beer edwards
+41BX1031_001,41BX1031,29x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+41BX256_055,41BX256,28x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+41BX32_118,41BX32,29x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+41BX36_001,41BX36,29x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+41BX36_003,41BX36,29x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+41BX36a_002,41BX36,29x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+41BX36a_004,41BX36,29x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+41BX6_121,41BX6,29x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+41BX918_001,41BX918,29x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+41GU177_116,41GU177,29x98,Guadalupe,East Central Texas Plains,central,PFurther,edwards
+41TG91_001,41TG91,31x100,Tom Green,Central Great Plains,central,Core,edwards
+41TG91_003,41TG91,31x100,Tom Green,Central Great Plains,central,Core,georgetown
+41TG91_005,41TG91,31x100,Tom Green,Central Great Plains,central,Core,florence
+41TG91_007,41TG91,31x100,Tom Green,Central Great Plains,central,Core,cienega
+41TG91_009,41TG91,31x100,Tom Green,Central Great Plains,central,Core,cienega
+41TG91_010,41TG91,31x100,Tom Green,Central Great Plains,central,Core,edwards
+41TG91_027,41TG91,31x100,Tom Green,Central Great Plains,central,Core,cienega
+41TG91_028,41TG91,31x100,Tom Green,Central Great Plains,central,Core,edwards
+41TG91_030,41TG91,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+41TG91_032,41TG91,31x100,Tom Green,Central Great Plains,central,Core,edwards
+41TG91_051,41TG91,31x100,Tom Green,Central Great Plains,central,Core,edwards
+41TG91a_002,41TG91,31x100,Tom Green,Central Great Plains,central,Core,cienega
+41TG91a_004,41TG91,31x100,Tom Green,Central Great Plains,central,Core,edwards
+41TG91a_006,41TG91,31x100,Tom Green,Central Great Plains,central,Core,edwards
+41TG91a_008,41TG91,31x100,Tom Green,Central Great Plains,central,Core,cienega
+41TG91a_029,41TG91,31x100,Tom Green,Central Great Plains,central,Core,edwards
+41TG91a_031,41TG91,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+41TG91a_038,41TG91,31x100,Tom Green,Central Great Plains,central,Core,cienega
+41UV68_123,41UV68,29x99,Uvalde,Southern Texas Plains,central,Core,georgetown
+41UV68_124,41UV68,29x99,Uvalde,Southern Texas Plains,central,Core,florence
+NTAS_001,41WN73,29x98,Wilson,East Central Texas Plains,central,Core,n/a
+NTAS_002,41WN73,29x98,Wilson,East Central Texas Plains,central,Core,edwards
+perdiz021,41KM226,30x99,Kimble,Edwards Plateau,central,Core,edwards
+perdiz021a,41KM226,30x99,Kimble,Edwards Plateau,central,Core,edwards
+perdiz022,41KM226,30x99,Kimble,Edwards Plateau,central,Core,florence
+perdiz027,41BQ285,31x97,Bosque,Cross Timbers,central,Periphery,edwards
+perdiz028,41BU75,30x96,Burleson,East Central Texas Plains,central,Core,cienega
+perdiz029,41BU75,30x96,Burleson,East Central Texas Plains,central,Core,cienega
+perdiz030,41UV47,29x99,Uvalde,Southern Texas Plains,central,Core,n/a
+perdiz031,41UV47,29x99,Uvalde,Southern Texas Plains,central,Core,n/a
+perdiz032,41UV47,29x99,Uvalde,Southern Texas Plains,central,Core,n/a
+perdiz033,41UV47,29x99,Uvalde,Southern Texas Plains,central,Core,n/a
+perdiz034,41UV47,29x99,Uvalde,Southern Texas Plains,central,Core,n/a
+perdiz035,41UV47,29x99,Uvalde,Southern Texas Plains,central,Core,n/a
+perdiz036,41UV47,29x99,Uvalde,Southern Texas Plains,central,Core,n/a
+perdiz036a,41UV47,29x99,Uvalde,Southern Texas Plains,central,Core,n/a
+perdiz036b,41UV47,29x99,Uvalde,Southern Texas Plains,central,Core,n/a
+perdiz040,41HM51,31x98,Hamilton,Cross Timbers,central,PFurther,edwards
+perdiz041,41HM51,31x98,Hamilton,Cross Timbers,central,PFurther,edwards
+perdiz042,41HM51,31x98,Hamilton,Cross Timbers,central,PFurther,edwards
+perdiz043,41HM51,31x98,Hamilton,Cross Timbers,central,PFurther,edwards
+perdiz044,41HM51,31x98,Hamilton,Cross Timbers,central,PFurther,edwards
+perdiz045,41ML162,31x97,McLennan,Cross Timbers,central,Periphery,n/a
+perdiz046,41LE326,30x96,Lee,East Central Texas Plains,central,PFurther,cienega
+perdiz049,41MM341,30x96,Milam,East Central Texas Plains,central,Periphery,jasper
+perdiz049a,41MM341,30x96,Milam,East Central Texas Plains,central,Periphery,edwards
+perdiz050,41HY160,29x97,Hays,Edwards Plateau,central,Core,edwards
+perdiz050a,41HY160,29x97,Hays,Edwards Plateau,central,Core,cienega
+perdiz057,41BX52,29x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+perdiz058,41KM69,30x99,Kimble,Edwards Plateau,central,Core,edwards
+perdiz059,41KM69,30x99,Kimble,Edwards Plateau,central,Core,edwards
+perdiz059g,41KM69,30x99,Kimble,Edwards Plateau,central,Core,edwards
+perdiz060,41HY147,29x97,Hays,Edwards Plateau,central,Core,root beer edwards
+perdiz070,41HY165,32x97,Hays,Edwards Plateau,central,Core,root beer edwards
+perdiz071,41HY165,29x97,Hays,Edwards Plateau,central,Core,root beer edwards
+perdiz072,41HY165,29x97,Hays,Edwards Plateau,central,Core,root beer edwards
+perdiz081,41BX19,29x98,Bexar,Texas Blackland Prairies,central,Core,edwards
+perdiz085,41FT549,31x95,Freestone,East Central Texas Plains,central,Periphery,cienega
+smu001,41HI1,32x97,Hill,Texas Blackland Prairies,central,Periphery,edwards
+smu002,41HI1,32x97,Hill,Texas Blackland Prairies,central,Periphery,edwards
+smu003,41HI1,32x97,Hill,Texas Blackland Prairies,central,Periphery,edwards
+smu004,41HI1,32x97,Hill,Texas Blackland Prairies,central,Periphery,edwards
+smu005,41ML189,31x97,McLennan,Cross Timbers,central,Periphery,edwards
+smu006,41ML44,31x97,McLennan,Cross Timbers,central,Periphery,edwards
+smu007,41ML44,31x97,McLennan,Cross Timbers,central,Periphery,edwards
+smu008,41ML44,31x97,McLennan,Cross Timbers,central,Periphery,edwards
+smu009,41ML44,31x97,McLennan,Cross Timbers,central,Periphery,florence
+smu010,41ML44,31x97,McLennan,Cross Timbers,central,Periphery,cienega
+smu011,41ML44,31x97,McLennan,Cross Timbers,central,Periphery,edwards
+smu012a,41ML44,31x97,McLennan,Cross Timbers,central,Periphery,edwards
+smu013,41ML44,31x97,McLennan,Cross Timbers,central,Periphery,georgetown
+smu014,41ML44,31x97,McLennan,Cross Timbers,central,Periphery,jasper
+smu015,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu016,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu017,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu018,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu019,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu020,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu021a,41NV203,31x96,Navarro,Texas Blackland Prairies,central,Periphery,edwards
+smu022a,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu023,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu024a,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu025,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu026,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu027,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu028,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,jasper
+smu029,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu030,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu031,41FT201,31x96,Freestone,East Central Texas Plains,central,Periphery,edwards
+smu040d,41HI163,31x97,Hill,Texas Blackland Prairies,central,Periphery,n/a
+smu040L,41HI163,31x97,Hill,Texas Blackland Prairies,central,Periphery,n/a
+smu042e,41HI163,31x97,Hill,Texas Blackland Prairies,central,Periphery,n/a
+smu084,41COL9,30x96,Collin,East Central Texas Plains,central,Periphery,obsidian
+smu086d,41BZ110,30x96,Brazos,East Central Texas Plains,central,Periphery,obsidian
+smu090,x41BR8,31x99,Brown,Cross Timbers,central,Core,n/a
+tarl007a,41tg346,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+tarl007b,41tg346,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+tarl007c,41tg346,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+tarl009a,41tg346,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+tarl009b,41tg346,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+tarl009c,41tg346,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+tarl010a,41tg346,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+tarl010b,41tg346,31x100,Tom Green,Central Great Plains,central,Core,edwards
+tarl010c,41tg346,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+tarl010d,41tg346,31x100,Tom Green,Central Great Plains,central,Core,root beer edwards
+41JK16_041,41JK16,28x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,jasper
+41JK162_045,41JK162,28x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,
+41JK162a_002,41JK162,28x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,ogallala
+41JK163_052,41JK163,28x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,edwards
+41JK167_054,41JK167,28x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,edwards
+41JK16a_042,41JK16,28x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,edwards
+41JK175_011,41JK175,28x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,ogallala
+41JK66_001,41JK66,29x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,edwards
+41JK66_015,41JK66,29x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,root beer edwards
+41JK66_33,41JK66,29x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,edwards
+41JK66a_034,41JK66,28x96,Jackson,Western Gulf Coastal Plain,coastal,PFurther,edwards
+41NU11_122,41NU11,27x97,Nueces,Western Gulf Coastal Plain,coastal,PFurther,cienega
+perdiz037,41HR751,29x95,Harris,Western Gulf Coastal Plain,coastal,PFurther,jasper
+perdiz038,41HR751,29x95,Harris,Western Gulf Coastal Plain,coastal,PFurther,edwards
+perdiz039,41HR751,29x95,Harris,Western Gulf Coastal Plain,coastal,PFurther,silicified wood
+perdiz047,41FB280,29x95,Fort Bend,Western Gulf Coastal Plain,coastal,PFurther,edwards
+perdiz048,41FB280,29x95,Fort Bend,Western Gulf Coastal Plain,coastal,PFurther,edwards
+perdiz051,41HR269,29x95,Harris,Western Gulf Coastal Plain,coastal,PFurther,n/a
+perdiz052,41HR269,29x95,Harris,Western Gulf Coastal Plain,coastal,PFurther,n/a
+perdiz053,41HR281,29x95,Harris,Western Gulf Coastal Plain,coastal,PFurther,n/a
+perdiz054,41HR269,29x95,Harris,Western Gulf Coastal Plain,coastal,PFurther,n/a
+smu063,41KL60,27x97,Kleberg,Western Gulf Coastal Plain,coastal,PFurther,n/a
+tarl005,41vt116,28x97,Victoria,Western Gulf Coastal Plain,coastal,PFurther,root beer edwards
+554,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+555,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+556,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+559,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+562,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+565,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+646,41CP5,32x94,Camp,South Central Plains,east,PFurther,jasper
+649,41CP5,32x94,Camp,South Central Plains,east,PFurther,jasper
+651,41CP5,32x94,Camp,South Central Plains,east,PFurther,jasper
+652,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+653,41CP12,32x94,Camp,South Central Plains,east,PFurther,edwards
+654,41CP12,32x94,Camp,South Central Plains,east,PFurther,pedernales river
+655,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+656,41CP12,32x94,Camp,South Central Plains,east,PFurther,pedernales river
+657,41CP12,32x94,Camp,South Central Plains,east,PFurther,edwards
+659,41CP12,32x94,Camp,South Central Plains,east,PFurther,root beer edwards
+660,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+661,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+665,41CP12,32x94,Camp,South Central Plains,east,PFurther,jasper
+677,41CP20,32x94,Camp,South Central Plains,east,PFurther,edwards
+678,41CP20,32x94,Camp,South Central Plains,east,PFurther,pedernales river
+f2_g1_10,41SY27,31x94,Shelby,South Central Plains,east,PFurther,leon river
+f2_g1_11,41SY27,31x94,Shelby,South Central Plains,east,PFurther,leon river
+f2_g1_12,41SY27,31x94,Shelby,South Central Plains,east,PFurther,edwards
+f2_g1_13,41SY27,31x94,Shelby,South Central Plains,east,PFurther,edwards
+f2_g1_15,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g1_16,41SY27,31x94,Shelby,South Central Plains,east,PFurther,edwards
+f2_g1_17,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g1_18,41SY27,31x94,Shelby,South Central Plains,east,PFurther,leon river
+f2_g1_20,41SY27,31x94,Shelby,South Central Plains,east,PFurther,edwards
+f2_g1_3,41SY27,31x94,Shelby,South Central Plains,east,PFurther,leon river
+f2_g1_4,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g1_7,41SY27,31x94,Shelby,South Central Plains,east,PFurther,edwards
+f2_g1_8,41SY27,31x94,Shelby,South Central Plains,east,PFurther,leon river
+f2_g1_9,41SY27,31x94,Shelby,South Central Plains,east,PFurther,edwards
+f2_g2_1,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g2_10,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g2_11,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g2_12,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g2_13,41SY27,31x94,Shelby,South Central Plains,east,PFurther,root beer edwards
+f2_g2_14,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g2_15,41SY27,31x94,Shelby,South Central Plains,east,PFurther,pedernales river
+f2_g2_2,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g2_3,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g2_5,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g2_6,41SY27,31x94,Shelby,South Central Plains,east,PFurther,edwards
+f2_g2_7,41SY27,31x94,Shelby,South Central Plains,east,PFurther,root beer edwards
+f2_g2_8,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g2_9,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g3_1,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g3_2,41SY27,31x94,Shelby,South Central Plains,east,PFurther,jasper
+f2_g3_3,41SY27,31x94,Shelby,South Central Plains,east,PFurther,pedernales river
+f2_g3_4,41SY27,31x94,Shelby,South Central Plains,east,PFurther,pedernales river
+na49_1,41NA49,31x94,Nacogdoches,South Central Plains,east,PFurther,jasper
+na49_11,41NA49,31x94,Nacogdoches,South Central Plains,east,PFurther,jasper
+na49_12,41NA49,31x94,Nacogdoches,South Central Plains,east,PFurther,jasper
+na49_13,41NA49,31x94,Nacogdoches,South Central Plains,east,PFurther,jasper
+na49_7,41NA49,31x94,Nacogdoches,South Central Plains,east,PFurther,jasper
+na49_8,41NA49,31x94,Nacogdoches,South Central Plains,east,PFurther,jasper
+na49_9,41NA49,31x94,Nacogdoches,South Central Plains,east,PFurther,jasper
+perdiz001,41NA206,31x94,Nacogdoches,South Central Plains,east,PFurther,edwards
+perdiz002,41NA206,31x94,Nacogdoches,South Central Plains,east,PFurther,jasper
+perdiz002a,41NA207,31x94,Nacogdoches,South Central Plains,east,PFurther,cienega
+perdiz003,41NA206,31x94,Nacogdoches,South Central Plains,east,PFurther,cienega
+perdiz004,41NA206,31x94,Nacogdoches,South Central Plains,east,PFurther,jasper
+perdiz005,41NA206,31x94,Nacogdoches,South Central Plains,east,PFurther,jasper
+perdiz006,41NA206,31x94,Nacogdoches,South Central Plains,east,PFurther,cienega
+perdiz007,41SM193,32x95,Smith,South Central Plains,east,PFurther,edwards
+perdiz008,41SM193,32x95,Smith,South Central Plains,east,PFurther,edwards
+perdiz009,41SM193,32x95,Smith,South Central Plains,east,PFurther,pisagh ridge
+perdiz010,41SM193,32x95,Smith,South Central Plains,east,PFurther,pisagh ridge
+perdiz011,41SM193,32x95,Smith,South Central Plains,east,PFurther,pisagh ridge
+perdiz012,41SM193,32x95,Smith,South Central Plains,east,PFurther,pisagh ridge
+perdiz013,41SM193,32x95,Smith,South Central Plains,east,PFurther,pisagh ridge
+perdiz014,41SM193,32x95,Smith,South Central Plains,east,PFurther,edwards
+perdiz015,41SM193,32x95,Smith,South Central Plains,east,PFurther,edwards
+perdiz016,41SM193,32x95,Smith,South Central Plains,east,PFurther,edwards
+perdiz017,41SM193,32x95,Smith,South Central Plains,east,PFurther,edwards
+perdiz018,41SM193,32x95,Smith,South Central Plains,east,PFurther,edwards
+perdiz019,41SM193,32x95,Smith,South Central Plains,east,PFurther,edwards
+perdiz020,41SM193,32x95,Smith,South Central Plains,east,PFurther,edwards
+perdiz026,41SM441,32x95,Smith,South Central Plains,east,PFurther,n/a
+perdiz026a,41sm442,32x95,Smith,South Central Plains,east,PFurther,n/a
+perdiz056,41CE423,32x95,Cherokee,South Central Plains,east,PFurther,n/a
+perdiz063,41CP495,32x94,Camp,South Central Plains,east,PFurther,n/a
+perdiz064,41CP495,32x94,Camp,South Central Plains,east,PFurther,n/a
+perdiz065,41SA135,31x94,San Augustine,South Central Plains,east,PFurther,n/a
+perdiz066,41SA135,31x94,San Augustine,South Central Plains,east,PFurther,n/a
+perdiz067g,41SA135,31x94,San Augustine,South Central Plains,east,PFurther,n/a
+perdiz068,41SA135,31x94,San Augustine,South Central Plains,east,PFurther,n/a
+perdiz073,41HO13,29x97,Houston,South Central Plains,east,PFurther,cienega
+perdiz074,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz074c,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz075,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz075a,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz075b,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz076,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz077,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz077j,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz078,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz079,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz080,41HO13,31x95,Houston,South Central Plains,east,PFurther,jasper
+perdiz082,41GG38,32x94,Gregg,South Central Plains,east,PFurther,n/a
+perdiz083,41GG49,32x94,Gregg,South Central Plains,east,PFurther,n/a
+perdiz084,41CE481,31x95,Cherokee,South Central Plains,east,PFurther,quartzite
+smu053,41DT36,33x95,Hopkins,East Central Texas Plains,east,PFurther,n/a
+smu058,41DT21,33x95,Delta,Texas Blackland Prairies,east,PFurther,n/a
+smu059,41DT54,33x95,Delta,Texas Blackland Prairies,east,PFurther,n/a
+smu068f,41BQ285,33x94,Bosque,East Central Texas Plains,east,PFurther,edwards
+smu072b,41COL4,33x95,Collin,East Central Texas Plains,east,PFurther,obsidian
+smu074,41HP175,32x95,Hopkins,South Central Plains,east,PFurther,n/a
+smu076b,41CE100,32x95,Henderson,South Central Plains,east,PFurther,n/a
+smu088,41TT178,33x95,Titus  ,East Central Texas Plains,east,PFurther,n/a
+smu092y,41MX5,33x94,Morris,South Central Plains,east,PFurther,n/a
+smu092z,41MX5,33x94,Morris,South Central Plains,east,PFurther,n/a
+smu094,41WD16,32x95,Wood,East Central Texas Plains,east,PFurther,n/a
+tarl002a,41AN9,31x95,Anderson,East Central Texas Plains,east,PFurther,edwards
+tarl002b,41AN9,31x95,Anderson,East Central Texas Plains,east,PFurther,cienega
+tarl004a,41an35,31x95,Anderson,East Central Texas Plains,east,PFurther,edwards
+tarl004b,41an35,31x95,Anderson,East Central Texas Plains,east,PFurther,edwards
+tarl004c,41an35,31x95,Anderson,East Central Texas Plains,east,PFurther,edwards
+tarl004d,41an35,31x95,Anderson,East Central Texas Plains,east,PFurther,root beer edwards
+tarl004e,41an35,31x95,Anderson,East Central Texas Plains,east,PFurther,edwards
+tarl004f,41an35,31x95,Anderson,East Central Texas Plains,east,PFurther,cienega
+tarl004g,41an35,31x95,Anderson,East Central Texas Plains,east,PFurther,root beer edwards
+ft1,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,root beer edwards
+ft10,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+ft11,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+ft12,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+ft2,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+ft3,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+ft4,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+ft5,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+ft6,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+ft7,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+ft8,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,jasper
+ft9,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,jasper
+perdiz069,41DL148,31x94,Dallas ,Texas Blackland Prairies,northcentral,Periphery,florence
+smu035a,41DL149,32x97,Dallas ,Texas Blackland Prairies,northcentral,Periphery,n/a
+smu036o,41DL149,32x97,Dallas ,Texas Blackland Prairies,northcentral,Periphery,n/a
+smu049f,41RW2,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,n/a
+smu049g,41RW2,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,n/a
+smu051,41DL148,32x97,Dallas ,Texas Blackland Prairies,northcentral,Periphery,n/a
+smu055,41DL68,32x96,Dallas ,Texas Blackland Prairies,northcentral,Periphery,n/a
+smu061d,41DT80,33x95,Denton,Cross Timbers,northcentral,PFurther,n/a
+smu065a,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+smu065b,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+smu065c,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,florence
+smu065e,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,florence
+smu065f,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+smu065g,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,edwards
+smu065k,41RW1,32x96,Rockwall,Texas Blackland Prairies,northcentral,PFurther,jasper
+smu070,41TT6,32x96,Titus  ,Texas Blackland Prairies,northcentral,PFurther,n/a
+smu072a,41COL4,32x96,Collin,Texas Blackland Prairies,northcentral,PFurther,jasper
+smu076c,41CE100,33x96,Henderson,Cross Timbers,northcentral,PFurther,n/a
+smu079i,41DN9,33x96,Denton,Cross Timbers,northcentral,PFurther,n/a
+smu079j,41DN9,33x96,Denton,Cross Timbers,northcentral,PFurther,n/a
+smu079m,41DN9,33x96,Denton,Cross Timbers,northcentral,PFurther,n/a
+smu079n,41DN9,32x96,Denton,Texas Blackland Prairies,northcentral,Periphery,n/a
+smu081,41DL106,33x96,Dallas ,Texas Blackland Prairies,northcentral,PFurther,jasper
+tarl003a,41EL11,32x96,Ellis,Texas Blackland Prairies,northcentral,Periphery,edwards
+tarl003b,41EL11,32x96,Ellis,Texas Blackland Prairies,northcentral,Periphery,root beer edwards
+tarl003c,41EL11,32x96,Ellis,Texas Blackland Prairies,northcentral,Periphery,edwards
+tarl003d,41EL11,32x96,Ellis,Texas Blackland Prairies,northcentral,Periphery,edwards
+tarl003e,41EL11,32x96,Ellis,Texas Blackland Prairies,northcentral,Periphery,edwards
+tarl003f,41EL11,32x96,Ellis,Texas Blackland Prairies,northcentral,Periphery,edwards
+tarl003g,41EL11,32x96,Ellis,Texas Blackland Prairies,northcentral,Periphery,edwards
+tarl003h,41EL11,32x96,Ellis,Texas Blackland Prairies,northcentral,Periphery,ogallala
+tarl003i,41EL11,32x96,Ellis,Texas Blackland Prairies,northcentral,Periphery,edwards
+tarl003j,41EL11,32x96,Ellis,Texas Blackland Prairies,northcentral,Periphery,edwards
+41JW0008_056,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,cienega
+41JW0008_058,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_059,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_061,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_062,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_064,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_066,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008_068,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,jasper
+41JW0008_070,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008_071,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_072,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_074,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,ellenburger
+41JW0008_076,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_077,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_079,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_081,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_084,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008_085,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_087,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,cienega
+41JW0008_089,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008_090,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008_092,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_093,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008_095,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_096,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,pedernales river
+41JW0008_098,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,pedernales river
+41JW0008_100,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_101,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_102,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_104,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_105,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_106,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,jasper
+41JW0008_108,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,jasper
+41JW0008_109,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,ellenburger
+41JW0008_110,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008_111,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,cienega
+41JW0008_112,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008_113,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,ogallala
+41JW0008_114,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008_115,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_060,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_063,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_065,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_067,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008a_069,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_073,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_075,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,ellenburger
+41JW0008a_078,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_080,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_082,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_086,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_088,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,cienega
+41JW0008a_091,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008a_094,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008a_097,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,edwards
+41JW0008a_099,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41JW0008a_103,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,cienega
+41JW0008a_107,41JW8,27x98,Jim Wells,Western Gulf Coastal Plain,southwest,Core,root beer edwards
+41LK51_024,41LK51,28x98,Live Oak,Southern Texas Plains,southwest,Core,edwards
+41LK51_035,41LK51,28x98,Live Oak ,Southern Texas Plains,southwest,Core,root beer edwards
+41LK51a_36,42LK51,28x98,Live Oak,Southern Texas Plains,southwest,Core,root beer edwards
+41LK64_40,41LK64,28x98,Live Oak,Southern Texas Plains,southwest,Core,cienega
+41MC19_026,41MC19,28x98,McMullen,Southern Texas Plains,southwest,Core,cienega
+41MC19a_047,41MC19,28x98,McMullen,Southern Texas Plains,southwest,Core,root beer edwards
+41MC211_001,41MC211,28x98,McMullen,Southern Texas Plains,southwest,Core,root beer edwards
+41MC269_001,41MC269,28x98,McMullen,Southern Texas Plains,southwest,Core,florence
+41MC269_002,41MC269,28x98,McMullen,Southern Texas Plains,southwest,Core,root beer edwards
+41MC275_39,41MC275,28x98,McMullen,Southern Texas Plains,southwest,Core,cienega
+41MC296_012,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,edwards
+41MC296_013,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,pedernales river
+41MC296_014,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,root beer edwards
+41MC296_016,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,root beer edwards
+41MC296_017,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,edwards
+41MC296_019,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,pedernales river
+41MC296_043,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,pedernales river
+41MC296_048,41MC269,28x98,McMullen,Southern Texas Plains,southwest,Core,edwards
+41MC296_049,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,edwards
+41MC296a_020,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,root beer edwards
+41MC296a_044,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,root beer edwards
+41MC296a_050,41MC296,28x98,McMullen,Southern Texas Plains,southwest,Core,edwards
+41MC55_021,41MC55,28x98,McMullen,Southern Texas Plains,southwest,Core,edwards
+41MC55_25,41MC55,28x98,McMullen,Southern Texas Plains,southwest,Core,florence
+41MC63a_23,41MC63,28x98,McMullen,Southern Texas Plains,southwest,Core,root beer edwards
+41ZV83_125,41ZV83,28x99,Zavala,Southern Texas Plains,southwest,Core,cienega
+41ZV83_126,41ZV83,28x99,Zavala,Southern Texas Plains,southwest,Core,edwards
+41ZV85_119,ranch,28x100,Zavala,Southern Texas Plains,southwest,Core,edwards
+41ZV85_120,41ZV85,28x100,Zavala,Southern Texas Plains,southwest,Core,edwards
+malloufsulross046,41BS2646,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,ogallala
+malloufsulross047,41BS2646,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,ogallala
+malloufsulross048,41BS2646,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,edwards
+malloufsulross049,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,edwards
+sulross001,41BS1507,29x103,Presidio,Chihuahuan Deserts,transpecos,Periphery,florence
+sulross002,n/a,29x103,Presidio,Chihuahuan Deserts,transpecos,Periphery,quartzite
+sulross003,41BS1507,29x103,Presidio,Chihuahuan Deserts,transpecos,Periphery,root beer edwards
+sulross004,41BS1507,29x103,Presidio,Chihuahuan Deserts,transpecos,Periphery,root beer edwards
+sulross006,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,root beer edwards
+sulross007,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,root beer edwards
+sulross011,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,florence
+sulross012,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,edwards
+sulross013,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross014,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross015,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,edwards
+sulross017,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross018,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross020,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross021,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,florence
+sulross023,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross024,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross027,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,root beer edwards
+sulross028,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross029,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross030,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,edwards
+sulross031,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,edwards
+sulross032,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross033,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross036,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,edwards
+sulross037,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross038,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross040,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross041,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,florence
+sulross042,n/a,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross043,41BS1507,29x103,Brewster,Chihuahuan Deserts,transpecos,Periphery,jasper
+sulross50,41PS306,30x104,Presidio,Chihuahuan Deserts,transpecos,Periphery,n/a

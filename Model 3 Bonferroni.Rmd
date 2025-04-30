@@ -1,0 +1,197 @@
+---
+title: "BLR Dissertation Hypothesis 2"
+author: "Bonnie Reynolds"
+date: '2025'
+output:
+  pdf_document:
+    toc: yes
+    number_sections: yes
+    highlight: tango
+  html_document:
+    toc: yes
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load packages
+
+```{r load, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+library(here)
+library(StereoMorph)
+library(geomorph)
+library(wesanderson)
+library(tidyverse)
+library(dplyr)
+```
+
+## dataframe
+```{r read, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+shapes <- readShapes("shapes")
+shapesGM <- readland.shapes(shapes, nCurvePts = c(10, 10, 10, 10))
+```
+
+## Read qualitative data
+```{r read qual, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+qdata <- read.csv("qdata.csv",
+                  header = TRUE,
+                  row.names = 1)
+```
+
+## GPA
+```{r gp, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+Y.gpa <- gpagen(shapesGM, print.progress = FALSE)
+
+# Plot the GPA results with a title
+plot(Y.gpa)
+title(main = "BLR Analysis - Perdiz Point GPA") 
+
+```
+
+## dataframe
+```{r dataframe, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+gdf <- geomorph.data.frame(shape = Y.gpa$coords,
+                            size = Y.gpa$Csize,
+                            region = qdata$ecoregion) #ecoregions
+
+# add centroid size to qdata
+qdata$csz <- Y.gpa$Csize
+```
+
+## Boxplot
+```{r box, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+#attributes
+csz <- qdata$csz
+corep <- qdata$ecoregion
+
+# palette (because women belong in sciences!)
+pal <- c(
+  "#FFB7C5",  # pastel pink
+  "#D291BC",  # soft lilac
+  "#F7C5E0",  # bubblegum
+  "#CBAACB",  # dusty mauve
+  "#FFD1DC",  # light pink
+  "#E0BBE4",  # soft lavender
+  "#DA70D6",  # orchid
+  "#FF99C8",  # cotton candy
+  "#F4A7B9"   # rose blush
+)
+
+#boxplot of Perdiz arrow points by region
+csz.reg <- ggplot(qdata, aes(x = ecoregion, y = csz, color = region)) +
+  geom_boxplot() +
+  scale_color_manual(values = pal) + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  theme(legend.position = "none") +
+  labs(x = 'Region', y = 'Centroid Size')
+
+# render plot
+csz.reg
+```
+
+## ANOVA - shape and size
+```{r shapesize, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+#size
+fit.sz.reg <- procD.lm(size ~ corep,
+                       data = gdf,
+                       print.progress = FALSE,
+                       iter = 9999)
+
+# size
+anova(fit.sz.reg)
+
+# pairwise comparison of LS means = which differ? (remember this is size)
+sz.reg <- pairwise(fit.sz.reg,
+                   groups = qdata$ecoregion)
+
+#pairwise comparison with Bonferroni correction (because comparing so many things)
+sz.reg$p.adjusted <- p.adjust(sz.reg$TL$pval, method = "bonferroni")
+
+summary(sz.reg,
+        confidence = 0.95,
+        test.type = "dist")
+
+# shape
+fit.sh.reg <- procD.lm(shape ~ corep,
+                       data = gdf,
+                       print.progress = FALSE,
+                       iter = 9999)
+
+#shape
+anova(fit.sh.reg)
+
+# pairwise comparison of LS means = which differ? (now looking at shpae)
+sh.reg <- pairwise(fit.sh.reg,
+                   groups = qdata$ecoregion)
+#pairwise comparison with Bonferroni correction (because comparing so many things)
+sz.reg$p.adjusted <- p.adjust(sz.reg$TL$pval, method = "bonferroni")
+
+summary(sh.reg,
+        confidence = 0.95,
+        test.type = "dist")
+```
+
+## Mean shapes
+```{r mean-shape-comparisons, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+
+# Subset landmark coordinates by ecoregion group
+new.coords <- coords.subset(A = Y.gpa$coords,
+                            group = qdata$ecoregion)
+region_names <- names(new.coords)
+
+# Calculate mean shapes for each region
+mean_shapes <- lapply(new.coords, mshape)
+names(mean_shapes) <- region_names
+
+# Plot mean shapes
+for (name in region_names) {
+  plot(mean_shapes[[name]], main = paste("Mean Shape:", name))
+}
+
+# Create all pairwise combinations
+comparison_pairs <- combn(region_names, 2, simplify = FALSE)
+
+# Show pairwise comparisons with pink and purple colors (because women and nonbinary people belong in coding), NO numbers, and a adjusted legend 
+for (pair in comparison_pairs) {
+  ref <- mean_shapes[[pair[1]]]
+  target <- mean_shapes[[pair[2]]]
+  
+  # Combine coordinates for limit setting
+  all_x <- c(ref[,1], target[,1])
+  all_y <- c(ref[,2], target[,2])
+  
+  # Set plot limits with some padding
+  xlim_range <- range(all_x) + c(-0.1, 0.1) * diff(range(all_x))
+  ylim_range <- range(all_y) + c(-0.1, 0.1) * diff(range(all_y))
+  
+  # Set up the plot
+  plot(ref[,1], ref[,2],
+       asp = 1,
+       pch = 16,
+       col = "pink",
+       xlim = xlim_range,
+       ylim = ylim_range,
+       xlab = "X",
+       ylab = "Y",
+       main = paste("Ref:", pair[1], "→ Target:", pair[2]))
+  
+  # Add the target points
+  points(target[,1], target[,2], 
+         pch = 17, 
+         col = "purple")
+   # Add a cleaner legend
+  legend("bottomleft", 
+         legend = c(paste("Ref:"), paste("Target:")), 
+         col = c("pink", "purple"), 
+         pch = c(16, 17),
+         pt.cex = 1.5,    # bigger points in legend
+         cex = 0.8,       # shrink text slightly
+         bty = "n",       # no box around the legend
+         inset = 0.02)    # slight inset to avoid the edges
+  
+ 
+}
+
+```

@@ -1,0 +1,228 @@
+---
+title: "BLR Dissertation Hypothesis 3"
+author: "Bonnie Reynolds"
+date: '2025'
+output:
+  pdf_document:
+    toc: yes
+    number_sections: yes
+    highlight: tango
+  html_document:
+    toc: yes
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load packages
+```{r load, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+library(here)
+library(StereoMorph)
+library(geomorph)
+library(wesanderson)
+library(tidyverse)
+
+```
+
+## Read data and define sLMs
+```{r read, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+shapes <- readShapes("shapes")
+shapesGM <- readland.shapes(shapes, nCurvePts = c(10, 10, 10, 10))
+```
+
+## Read qualitative data
+```{r read qual, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+qdata <- read.csv("qdata.csv",
+                  header = TRUE,
+                  row.names = 1)
+```
+
+## GPA
+```{r gp, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+Y.gpa <- gpagen(shapesGM, print.progress = FALSE)
+plot(Y.gpa)
+```
+
+## dataframe
+```{r dataframe, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+gdf <- geomorph.data.frame(shape = Y.gpa$coords,
+                            size = Y.gpa$Csize,
+                            region = qdata$region)
+
+# add centroid size to qdata
+qdata$csz <- Y.gpa$Csize
+```
+
+## Boxplot
+```{r box, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+#attributes
+csz <- qdata$csz
+region <- qdata$region
+
+# Custom pink + purple color palette (because 'girly' colors don't mean bad science)
+pal <- c("#FFB7C5",  # pastel pink
+         "#D291BC",  # soft lilac
+         "#F7C5E0",  # bubblegum
+         "#CBAACB",  # dusty mauve
+         "#FFD1DC",  # light pink
+         "#E0BBE4",  # soft lavender
+         "#FF99C8")  # bold cotton candy
+
+#boxplot of Perdiz arrow points by region
+csz.reg <- ggplot(qdata, aes(x = region, y = csz, color = region)) +
+  geom_boxplot() +
+  scale_color_manual(values = pal) + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  theme(legend.position = "none") +
+  labs(x = 'Region', y = 'Centroid Size')
+
+# render plot
+csz.reg
+```
+
+## ANOVA - shape and size
+```{r shapesize, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+#size
+fit.sz.reg <- procD.lm(size ~ region,
+                       data = gdf,
+                       print.progress = FALSE,
+                       iter = 9999)
+
+# size
+anova(fit.sz.reg)
+
+# pairwise comparison of LS means = which differ? (remember this is size)
+sz.reg <- pairwise(fit.sz.reg,
+                   groups = qdata$region)
+#pairwise comparison with Bonferroni correction (because comparing too many things)
+sz.reg$p.adjusted <- p.adjust(sz.reg$TL$pval, method = "bonferroni")
+
+summary(sz.reg,
+        confidence = 0.95,
+        test.type = "dist")
+print(sz.reg$p.adjusted)
+
+# shape
+fit.sh.reg <- procD.lm(shape ~ region,
+                       data = gdf,
+                       print.progress = FALSE,
+                       iter = 9999)
+
+#shape
+anova(fit.sh.reg)
+
+# pairwise comparison of LS means = which differ? (remember this is shape)
+sh.reg <- pairwise(fit.sh.reg,
+                   groups = qdata$region)
+
+#pairwise with Bonferroni correction (because comparing too many things)
+sh.reg$p.adjusted <- p.adjust(sh.reg$TL$pval, method = "bonferroni")
+
+summary(sh.reg,
+        confidence = 0.95,
+        test.type = "dist")
+print(sh.reg$p.adjusted)
+```
+
+## Mean shapes
+```{r mean-shape-comparisons, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE, message=FALSE}
+
+# Subset landmark coordinates by Core/Periphery group
+new.coords <- coords.subset(A = Y.gpa$coords, group = qdata$region)  # <-- used corep here
+mean_shapes <- lapply(new.coords, mshape)
+
+# Show mean shapes
+par(mfrow = c(2, 2))  # Adjust depending on how many groups you have
+for (group in names(mean_shapes)) {
+  plot(mean_shapes[[group]], main = paste("Mean Shape:", group))
+}
+par(mfrow = c(1, 1))
+
+# Show pairwise comparisons one by one
+comparison_pairs <- combn(names(mean_shapes), 2, simplify = FALSE)
+
+# Show pairwise comparisons with pink and purple colors (because women and nonbinary people belong in coding), NO numbers, and a adjusted legend 
+for (pair in comparison_pairs) {
+  ref <- mean_shapes[[pair[1]]]
+  target <- mean_shapes[[pair[2]]]
+  
+  # Find plot limits so both shapes fit nicely
+  xlim_range <- range(c(ref[,1], target[,1])) * 1.1  # a little padding
+  ylim_range <- range(c(ref[,2], target[,2])) * 1.1
+  
+  # Set up the plot
+  plot(ref[,1], ref[,2],
+       asp = 1,
+       pch = 16,
+       col = "pink",
+       xlim = xlim_range,
+       ylim = ylim_range,
+       xlab = "X",
+       ylab = "Y",
+       main = paste("Ref:", pair[1], "→ Target:", pair[2]))
+  
+  # Add the target points
+  points(target[,1], target[,2], 
+         pch = 17, 
+         col = "purple")
+  
+  # Add a cleaner legend
+  legend("bottomleft", 
+         legend = c(paste("Ref:"), paste("Target:")), 
+         col = c("pink", "purple"), 
+         pch = c(16, 17),
+         pt.cex = 1.5,    # bigger points in legend
+         cex = 0.8,       # shrink text slightly
+         bty = "n",       # no box around the legend
+         inset = 0.02)    # slight inset to avoid the edges
+}
+
+```
+## Principal Components Analysis (storing this here in case I need to see PCA shapes later)
+```{r pc, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+pca <- gm.prcomp(Y.gpa$coords)
+summary(pca)
+
+# set plot parameters
+pch.gps <- c(0:6)[as.factor(region)]
+
+
+# pca plot
+pc.plot <- plot(pca,
+                main = "Perdiz PCA",
+                asp = 1,
+                pch = pch.gps)
+shapeHulls(pc.plot,
+           groups = region)
+
+
+# Create the plot
+pch.gps <- c(0:28)[as.factor(region)]
+plot(pca, asp = 1, pch = pch.gps, col = unique(pch.gps), main = "Model 2 Sub-Regions")
+
+# Add the legend outside the plot area
+legend("topright", inset = c(-0.8, 0), # Adjust `inset` to move the legend outside
+       legend = levels(as.factor(region)), col = unique(pch.gps), 
+       pch = unique(pch.gps), title = "Model 2 Sub-Regions", xpd = TRUE)
+
+# plot x/y maxima/minima
+## x - minima
+mean.shape <- mshape(Y.gpa$coords)
+plotRefToTarget(pca$shapes$shapes.comp1$min,
+                mean.shape)
+
+## x - maxima
+plotRefToTarget(pca$shapes$shapes.comp1$max,
+                mean.shape)
+
+## y - minima
+plotRefToTarget(pca$shapes$shapes.comp2$min,
+                mean.shape)
+
+## y - maxima
+plotRefToTarget(pca$shapes$shapes.comp2$max,
+                mean.shape)
+
+```

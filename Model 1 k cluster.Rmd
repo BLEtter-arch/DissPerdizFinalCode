@@ -1,0 +1,306 @@
+---
+title: "BLR Dissertation Hypothesis 1 and K-Means Analysis and Allometry"
+author: "Bonnie Reynolds"
+date: '2025'
+output:
+  pdf_document:
+    toc: yes
+    number_sections: yes
+    highlight: tango
+  html_document:
+    toc: yes
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load packages
+
+```{r load, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+library(here)
+library(StereoMorph)
+library(geomorph)
+library(wesanderson)
+library(tidyverse)
+```
+
+## Read data and define sLMs (just leaving this here for safe keeping, don't run it unless making shape outlines)
+digitizeImages(image.file='points', 
+              shapes.file='shapes', 
+              landmarks.ref='landmarks.txt', 
+              curves.ref = 'curves.txt'
+              )
+
+## Read data and define sLMs
+```{r read, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+shapes <- readShapes("shapes")
+shapesGM <- readland.shapes(shapes, nCurvePts = c(10, 10, 10, 10))
+```
+
+## Read qualitative data
+```{r read qual, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+qdata <- read.csv("qdata.csv",
+                  header = TRUE,
+                  row.names = 1)
+```
+
+## Create Kmeans parameters
+```{r parameters, echo=TRUE}
+# K-Means parameters
+max_k <- 10         # Maximum number of clusters to test (Elbow Plot)
+nstart_value <- 25  # Number of starts for K-Means
+cluster_choices <- c(3, 6, 9)  # Cluster counts to analyze
+## Read data and define sLMs
+```
+
+## GPA
+```{r gp, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+Y.gpa <- gpagen(shapesGM, print.progress = FALSE)
+plot(Y.gpa)
+```
+
+## Kmeans Cluster Analyses
+
+## K-Means Cluster Analysis (Shape)
+```{r kmeans, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+# Prepare GPA coordinates
+gpa_flat <- as.data.frame(t(apply(Y.gpa$coords, 3, c)))
+
+# 1. Determine optimal number of clusters (Elbow Method)
+wss <- vector()
+for (k in 1:max_k) {
+  km <- kmeans(gpa_flat, centers = k, nstart = nstart_value)
+  wss[k] <- km$tot.withinss
+}
+plot(1:max_k, wss, type = "b", pch = 19, frame = FALSE,
+     xlab = "Number of clusters K",
+     ylab = "Total within-clusters sum of squares",
+     main = "Elbow Plot for Optimal K")
+
+# 2. K-Means Clustering with specified cluster choices
+set.seed(123)
+cluster_results <- list()
+for (k in cluster_choices) {
+  cluster_results[[paste0("k_", k)]] <- kmeans(gpa_flat, centers = k, nstart = nstart_value)
+}
+
+# Save assignments to a data frame
+assignments_shape <- data.frame(Sample = rownames(gpa_flat))
+for (k in cluster_choices) {
+  assignments_shape[[paste0("Cluster", k)]] <- cluster_results[[paste0("k_", k)]]$cluster
+}
+
+# Show cluster assignments in PDF if you are knitting
+knitr::kable(assignments_shape, caption = "K-Means Cluster Assignments (Shape Only)")
+
+# 3. PCA for visualization
+pca_result <- prcomp(gpa_flat, scale. = TRUE)
+pca_df <- data.frame(pca_result$x[, 1:2])
+
+# Add cluster assignments
+for (k in cluster_choices) {
+  pca_df[[paste0("Cluster", k)]] <- factor(cluster_results[[paste0("k_", k)]]$cluster)
+}
+
+# 4. Plot PCA with pretty cluster colors
+library(ggplot2)
+for (k in cluster_choices) {
+  p <- ggplot(pca_df, aes(x = PC1, y = PC2, color = .data[[paste0("Cluster", k)]])) +
+    geom_point(size = 2) +
+    theme_minimal() +
+    labs(title = paste("K-Means Clustering (", k, " Clusters)", sep = ""), color = "Cluster")
+  
+  print(p)
+}
+
+
+```
+
+## K-Means Cluster Analysis (Size)
+
+```{r kmeans-size, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+# Reminder to Bonnie - Make sure required libraries are loaded
+
+# Extract Centroid Size
+size_data <- data.frame(Size = Y.gpa$Csize)
+rownames(size_data) <- dimnames(Y.gpa$coords)[[3]]
+
+# 1. Elbow Method for optimal K
+wss <- vector()
+for (k in 1:max_k) {
+  km <- kmeans(size_data, centers = k, nstart = nstart_value)
+  wss[k] <- km$tot.withinss
+}
+plot(1:max_k, wss, type = "b", pch = 19, frame = FALSE,
+     xlab = "Number of clusters K",
+     ylab = "Total within-clusters sum of squares",
+     main = "Elbow Plot (Size Only)")
+
+# 2. K-Means Clustering on size
+set.seed(123)
+cluster_results_size <- list()
+for (k in cluster_choices) {
+  cluster_results_size[[paste0("k_", k)]] <- kmeans(size_data, centers = k, nstart = nstart_value)
+}
+
+# Save assignments
+assignments_size <- data.frame(Sample = rownames(size_data))
+for (k in cluster_choices) {
+  assignments_size[[paste0("Cluster", k)]] <- cluster_results_size[[paste0("k_", k)]]$cluster
+}
+
+# 3. Visualize with 1D plot (could do more if working with other types of data)(pretty colors again)
+for (k in cluster_choices) {
+  size_data$Cluster <- factor(cluster_results_size[[paste0("k_", k)]]$cluster)
+  p <- ggplot(size_data, aes(x = Cluster, y = Size, color = Cluster)) +
+    geom_jitter(width = 0.1, size = 2) +
+    theme_minimal() +
+    labs(title = paste("K-Means Clustering by Size (K =", k, ")"), x = "Cluster", y = "Centroid Size")
+  print(p)
+}
+
+# 4. Output table for when knitting
+knitr::kable(assignments_size, caption = "K-Means Cluster Assignments (Size Only)")
+
+
+```
+
+## dataframe model 1
+```{r dataframe, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+gdf <- geomorph.data.frame(shape = Y.gpa$coords,
+                            size = Y.gpa$Csize,
+                            region = qdata$corep) #Level I Ecoregions (per EPA)
+
+# add centroid size to qdata
+qdata$csz <- Y.gpa$Csize
+```
+
+## Test for Allometry
+```{r allometry}
+# Basic Allometry Test
+allometry_model <- procD.lm(shape ~ size, data = gdf)
+summary(allometry_model)
+
+# Plot regression scores
+plot(allometry_model, type = "regression", predictor = gdf$size)
+
+```
+## Boxplot
+```{r box, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+#attributes
+csz <- qdata$csz
+corep <- qdata$corep
+
+# Custom pink + purple color palette - because women and non-binary people belong in STEM
+# Custom pink + purple color palette
+pal <- c("#FFB7C5",  # pastel pink
+         "#D291BC",  # soft lilac
+         "#F7C5E0",  # bubblegum
+         "#CBAACB",  # dusty mauve
+         "#FFD1DC",  # light pink
+         "#E0BBE4",  # soft lavender
+         "#FF99C8")  # bold cotton candy
+        
+#boxplot of Perdiz arrow points by region
+csz.reg <- ggplot(qdata, aes(x = corep, y = csz, color = corep)) +
+  geom_boxplot() +
+  scale_color_manual(values = pal) + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  theme(legend.position = "none") +
+  labs(x = 'Region', y = 'Centroid Size')
+
+# make plot
+csz.reg
+```
+
+## ANOVA - size then shape
+```{r shapesize, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE}
+#size
+fit.sz.reg <- procD.lm(size ~ corep,
+                       data = gdf,
+                       print.progress = FALSE,
+                       iter = 9999)
+
+# size
+anova(fit.sz.reg)
+
+# pairwise comparison of LS means = which differ? (still size)
+sz.reg <- pairwise(fit.sz.reg,
+                   groups = qdata$corep)
+summary(sz.reg,
+        confidence = 0.95,
+        test.type = "dist")
+
+# shape
+fit.sh.reg <- procD.lm(shape ~ corep,
+                       data = gdf,
+                       print.progress = FALSE,
+                       iter = 9999)
+
+#shape
+anova(fit.sh.reg)
+
+# pairwise comparison of LS means = which differ? (now shape)
+sh.reg <- pairwise(fit.sh.reg,
+                   groups = qdata$corep)
+summary(sh.reg,
+        confidence = 0.95,
+        test.type = "dist")
+```
+
+## Mean shapes
+```{r mean-shape-comparisons, out.width = "100%", dpi = 300, echo = TRUE, warning=FALSE, message=FALSE}
+
+# Subset landmark coordinates by Core/Periphery group
+new.coords <- coords.subset(A = Y.gpa$coords, group = qdata$corep)  # <-- remember to change here
+mean_shapes <- lapply(new.coords, mshape)
+
+# Show mean shapes
+par(mfrow = c(2, 2))  # remember for later to djust depending on how many groups
+for (group in names(mean_shapes)) {
+  plot(mean_shapes[[group]], main = paste("Mean Shape:", group))
+}
+par(mfrow = c(1, 1))
+
+# Show pairwise comparisons one by one
+comparison_pairs <- combn(names(mean_shapes), 2, simplify = FALSE)
+
+# Show pairwise comparisons with pink and purple colors (because women and nonbinary people belong in coding), NO numbers, and a adjusted legend
+for (pair in comparison_pairs) {
+  ref <- mean_shapes[[pair[1]]]
+  target <- mean_shapes[[pair[2]]]
+  
+  # Find plot limits so both shapes fit nicely
+  xlim_range <- range(c(ref[,1], target[,1])) * 1.1  # a little padding
+  ylim_range <- range(c(ref[,2], target[,2])) * 1.1
+  
+  # Set up the plot
+  plot(ref[,1], ref[,2],
+       asp = 1,
+       pch = 16,
+       col = "pink",
+       xlim = xlim_range,
+       ylim = ylim_range,
+       xlab = "X",
+       ylab = "Y",
+       main = paste("Ref:", pair[1], "→ Target:", pair[2]))
+  
+  # Add the target points
+  points(target[,1], target[,2], 
+         pch = 17, 
+         col = "purple")
+  
+  # Add a cleaner legend
+  legend("bottomleft", 
+         legend = c(paste("Ref:"), paste("Target:")), 
+         col = c("pink", "purple"), 
+         pch = c(16, 17),
+         pt.cex = 1.5,    # bigger points in legend
+         cex = 0.8,       # shrink text slightly
+         bty = "n",       # no box around the legend
+         inset = 0.02)    # slight inset to avoid the edges
+}
+
+```
